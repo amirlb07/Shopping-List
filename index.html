@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Lista de compras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- Cabeçalho da página: botão voltar, título e campo de adicionar item -->
+    <div class="form-row">
+
+      <div class="logo-icon">
+        <img src="imgs/logo-icon.svg">
+      </div>
+
+      <button class="voltar-btn" id="Back">
+        <div class="icon-arrow"></div>
+        Voltar
+      </button>
+
+      <h1 class="title-style">Compras da semana</h1>
+
+      <!-- Input e botão de adicionar, um ao lado do outro -->
+      <div class="input-container">
+        <input class="addInput" type="text" id="itemInput" placeholder="Adicione um novo item" />
+        <button class="add-btn" id="Add">Adicionar item</button>
+      </div>
+
+    </div>
+
+
+    <ul id="shoppingList">
+      <li>
+        <div class="item-content">
+          <label class="checkbox">
+            <input type="checkbox" id="item1" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="item1" class="item-label">Pão de forma</label>
+        </div>
+        <button class="delete">
+          <div class="trash-icon"></div>
+        </button>
+      </li>
+      <li>
+        <div class="item-content">
+          <label class="checkbox">
+            <input type="checkbox" id="item2" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="item2" class="item-label">Café preto</label>
+        </div>
+        <button class="delete">
+          <div class="trash-icon"></div>
+        </button>
+      </li>
+      <li>
+        <div class="item-content">
+          <label class="checkbox">
+            <input type="checkbox" id="item3" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="item3" class="item-label">Suco de laranja</label>
+        </div>
+        <button class="delete">
+          <div class="trash-icon"></div>
+        </button>
+      </li>
+      <li>
+        <div class="item-content">
+          <label class="checkbox">
+            <input type="checkbox" id="item4" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="item4" class="item-label">Biscoito</label>
+        </div>
+        <button class="delete">
+          <div class="trash-icon"></div>
+        </button>
+      </li>
+    </ul>
+
+    <footer id="message">
+      <div class="message-content">
+        <div class="alert-icon"></div>
+        <span id="messageText"></span>
+      </div>
+      <button id="closeMessage">
+        <div class="close-icon"></div>
+      </button>
+    </footer>
+
+
+  </main>
+
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
